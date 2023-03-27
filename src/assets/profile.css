@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile-pic {
+  margin: 5px 0;
+}
+.profile-pic h2 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+}
+
+.profile-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.user-image {
+  width: 150px;
+  height: 150px;
+  background: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+.image-upload > [type='file'] { 
+  display: none;
+}
+.image-upload {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.img-name p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: verdana;    
+  color: white;          
+}
+label {
+  padding-bottom: 40px;
+
+}
+label i {
+  top: 50px;
+  font-size: 22px;
+  color: #088178;
+  padding: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 50px;
+  border: 3px solid #ddd;
+}
+label i:hover {
+  background-color: #cce7d0;
+  transition: 0.5s ease;
+}
+.profile-head {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+  margin-top: 15px;
+}
+.profile-head h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: white;
+}
+.username-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.username-cont h4 {
+  font-size: 19px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: white;
+}
+.username-field {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.user-in {
+  width: 45%;
+  display: block;
+}
+.user-in p2 {
+  padding-bottom: 15px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 100;
+}
+.user-input input {
+  margin-top: 10px;
+  outline: none;
+  flex: 1;
+  background: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid grey;
+  color: #222;
+  letter-spacing: 1px;
+}
+.saves {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.saves button {
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background: #cce7d0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 200;
+}
+.border {
+  margin: 20px 0;
+  border-top: 0.2px solid grey;
+}
+.error-message {
+  color: red;
+  letter-spacing: 1px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .profile-pic h2 {
+    font-size: 20px;
+  }
+  .user-image {
+    width: 100px;
+    height: 100px;
+  }
+  label i {
+    padding: 37px;
+  }
+  .username-cont h4 {
+    font-size: 14px;
+    color: white;
+  }
+  .profile-head h2 {
+    font-size: 18px;
+    color: white;
+  }
+  .user-in p2 {
+    font-size: 13px;
+    color: white;
+  }
+  .username-field {
+    flex-direction: column;
+  }
+  .user-in {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .msg-text {
+    font-size: 12px;
+  }
+  .msg-info-name,
+  .msg-info-time {
+    font-size: 14px;
+  }
+  
+  .user-input input {
+    font-size: 12px;
+  }
+  .saves button {
+    height: 50px;
+    width: 150px;
+  }
+}
+
